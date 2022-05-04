@@ -6,8 +6,14 @@ ruby "3.0.3"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.2", ">= 7.0.2.4"
 
-# The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
+gem 'sassc', '~> 2.1.0'
+
+gem 'bootstrap-sass', '~> 3.4.1'
+gem 'sassc-rails', '>= 2.1.0'
 gem "sprockets-rails"
+
+# The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
+# gem "sprockets-rails"
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do

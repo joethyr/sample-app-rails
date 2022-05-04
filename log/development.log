@@ -1,0 +1,212 @@
+Started GET "/" for ::1 at 2022-05-04 14:52:16 -0600
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 270.2ms | Allocations: 80191)
+  Rendered layout layouts/application.html.erb (Duration: 302.8ms | Allocations: 90637)
+Completed 500 Internal Server Error in 331ms (ActiveRecord: 0.0ms | Allocations: 97557)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x0000000000b608>
+Did you mean?  javascript_path
+               javascript_tag):
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all',
+    10:                                            'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    12:     <!--[if lt IE 9]>
+    13:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+    14:       </script>
+  
+app/views/layouts/application.html.erb:11
+Started GET "/" for ::1 at 2022-05-04 14:53:20 -0600
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 65.1ms | Allocations: 21980)
+  Rendered layout layouts/application.html.erb (Duration: 92.4ms | Allocations: 41431)
+Completed 200 OK in 104ms (Views: 96.7ms | ActiveRecord: 0.0ms | Allocations: 47223)
+
+
+Started GET "/" for ::1 at 2022-05-04 14:53:22 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.7ms | Allocations: 755)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3232)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 3622)
+
+
+Started GET "/" for ::1 at 2022-05-04 14:54:45 -0600
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 64.6ms | Allocations: 27549)
+  Rendered layout layouts/application.html.erb (Duration: 65.0ms | Allocations: 27656)
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 0.0ms | Allocations: 33377)
+
+
+  
+LoadError (cannot load such file -- sassc):
+  
+bootsnap (1.11.1) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:15:in `require'
+bootsnap (1.11.1) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:15:in `require'
+zeitwerk (2.5.4) lib/zeitwerk/kernel.rb:35:in `require'
+sprockets (4.0.3) lib/sprockets/autoload/sassc.rb:2:in `<main>'
+bootsnap (1.11.1) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+bootsnap (1.11.1) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+zeitwerk (2.5.4) lib/zeitwerk/kernel.rb:35:in `require'
+sprockets (4.0.3) lib/sprockets/sassc_processor.rb:42:in `initialize'
+sprockets (4.0.3) lib/sprockets/sassc_processor.rb:27:in `new'
+sprockets (4.0.3) lib/sprockets/sassc_processor.rb:27:in `instance'
+sprockets (4.0.3) lib/sprockets/sassc_processor.rb:31:in `call'
+sprockets (4.0.3) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.0.3) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.0.3) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.0.3) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.0.3) lib/sprockets/processor_utils.rb:22:in `block in <class:CompositeProcessor>'
+sprockets (4.0.3) lib/sprockets/processor_utils.rb:33:in `call'
+sprockets (4.0.3) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.0.3) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.0.3) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.0.3) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.0.3) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.0.3) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.0.3) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.0.3) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.0.3) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.0.3) lib/sprockets/bundle.rb:41:in `block in call'
+sprockets (4.0.3) lib/sprockets/utils.rb:170:in `dfs'
+sprockets (4.0.3) lib/sprockets/bundle.rb:42:in `call'
+sprockets (4.0.3) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.0.3) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.0.3) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.0.3) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.0.3) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.0.3) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.0.3) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.0.3) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.0.3) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.0.3) lib/sprockets/bundle.rb:32:in `block in call'
+/home/joe/.rbenv/versions/3.0.3/lib/ruby/3.0.0/set.rb:344:in `each_key'
+/home/joe/.rbenv/versions/3.0.3/lib/ruby/3.0.0/set.rb:344:in `each'
+sprockets (4.0.3) lib/sprockets/bundle.rb:31:in `call'
+sprockets (4.0.3) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.0.3) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.0.3) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.0.3) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.0.3) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.0.3) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.0.3) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.0.3) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.0.3) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.0.3) lib/sprockets/base.rb:81:in `find_asset'
+sprockets (4.0.3) lib/sprockets/base.rb:88:in `find_all_linked_assets'
+sprockets (4.0.3) lib/sprockets/manifest.rb:125:in `each'
+sprockets (4.0.3) lib/sprockets/manifest.rb:125:in `to_a'
+sprockets (4.0.3) lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `block in synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in `execute'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/promise.rb:564:in `block in realize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:352:in `run_task'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:343:in `block (3 levels) in create_worker'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `loop'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `block (2 levels) in create_worker'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `catch'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `block in create_worker'
+Started GET "/" for ::1 at 2022-05-04 15:03:17 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 535.3ms | Allocations: 139716)
+  Rendered layout layouts/application.html.erb (Duration: 563.6ms | Allocations: 159471)
+Completed 200 OK in 572ms (Views: 566.1ms | ActiveRecord: 0.0ms | Allocations: 165262)
+
+
+Started GET "/" for ::1 at 2022-05-04 15:03:44 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.7ms | Allocations: 682)
+  Rendered layout layouts/application.html.erb (Duration: 74.8ms | Allocations: 20346)
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 0.0ms | Allocations: 20739)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after '...rt "bootstrap";': expected 1 selector or at-rule, was "."
+        on line 2:21 of app/assets/stylesheets/custom.scss
+>> @import "bootstrap";
+
+   --------------------^
+):
+     6:   <%= csrf_meta_tags %>
+     7:   <%= csp_meta_tag %>
+     8: 
+     9:   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:   <%= javascript_importmap_tags %>
+    11: </head>
+    12: 
+  
+app/assets/stylesheets/custom.scss:2
+app/views/layouts/application.html.erb:9
+Started GET "/" for ::1 at 2022-05-04 15:03:53 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 755)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 7044)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 7412)
+
+
+Started GET "/" for ::1 at 2022-05-04 15:04:00 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 646)
+  Rendered layout layouts/application.html.erb (Duration: 69.2ms | Allocations: 18685)
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 0.0ms | Allocations: 18985)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after '...rt "bootstrap";': expected 1 selector or at-rule, was "."
+        on line 2:21 of app/assets/stylesheets/custom.scss
+>> @import "bootstrap";
+
+   --------------------^
+):
+     6:   <%= csrf_meta_tags %>
+     7:   <%= csp_meta_tag %>
+     8: 
+     9:   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:   <%= javascript_importmap_tags %>
+    11: </head>
+    12: 
+  
+app/assets/stylesheets/custom.scss:2
+app/views/layouts/application.html.erb:9
+Started GET "/" for ::1 at 2022-05-04 15:05:58 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 649)
+  Rendered layout layouts/application.html.erb (Duration: 225.8ms | Allocations: 46399)
+Completed 200 OK in 227ms (Views: 226.6ms | ActiveRecord: 0.0ms | Allocations: 46728)
+
+
+Started GET "/" for ::1 at 2022-05-04 15:06:33 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 646)
+  Rendered layout layouts/application.html.erb (Duration: 205.7ms | Allocations: 47204)
+Completed 200 OK in 207ms (Views: 206.4ms | ActiveRecord: 0.0ms | Allocations: 47529)
+
+
