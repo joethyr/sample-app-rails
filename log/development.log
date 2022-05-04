@@ -254,3 +254,76 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 83ms (Views: 78.5ms | ActiveRecord: 0.0ms | Allocations: 55404)
 
 
+Started GET "/" for ::1 at 2022-05-04 15:35:45 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1004)
+  Rendered layouts/_header.html.erb (Duration: 1.1ms | Allocations: 303)
+  Rendered layout layouts/application.html.erb (Duration: 249.2ms | Allocations: 50916)
+Completed 200 OK in 252ms (Views: 250.8ms | ActiveRecord: 0.0ms | Allocations: 52112)
+
+
+Started GET "/" for ::1 at 2022-05-04 15:35:47 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 649)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 6880)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 7229)
+
+
+Started GET "/" for ::1 at 2022-05-04 15:35:47 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 646)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 6884)
+Completed 200 OK in 12ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 7209)
+
+
+Started GET "/" for ::1 at 2022-05-04 15:35:48 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.0ms | Allocations: 649)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 6881)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 7206)
+
+
+Started GET "/" for ::1 at 2022-05-04 15:36:11 -0600
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 100.9ms | Allocations: 43743)
+  Rendered layouts/_header.html.erb (Duration: 1.6ms | Allocations: 305)
+  Rendered layout layouts/application.html.erb (Duration: 127.0ms | Allocations: 63740)
+Completed 200 OK in 138ms (Views: 130.4ms | ActiveRecord: 0.0ms | Allocations: 69528)
+
+
+Started GET "/" for ::1 at 2022-05-04 15:36:54 -0600
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 329.7ms | Allocations: 82660)
+  Rendered layouts/_header.html.erb (Duration: 1.8ms | Allocations: 308)
+  Rendered layout layouts/application.html.erb (Duration: 370.0ms | Allocations: 102684)
+Completed 200 OK in 380ms (Views: 373.2ms | ActiveRecord: 0.0ms | Allocations: 108472)
+
+
+Started GET "/" for ::1 at 2022-05-04 15:37:18 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1006)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 291)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 8229)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 9425)
+
+
