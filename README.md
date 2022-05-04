@@ -1,6 +1,6 @@
 # Sample App
 
-A simple app that acts as an exercise for creating static pages.
+An app that acts as an exercise for creating static pages.
 
 ## Description
 
