@@ -361,3 +361,185 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 293ms (Views: 292.4ms | ActiveRecord: 0.0ms | Allocations: 48133)
 
 
+Started GET "/" for ::1 at 2022-05-04 19:11:19 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 116.2ms | Allocations: 48380)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 308)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 212)
+  Rendered layout layouts/application.html.erb (Duration: 143.2ms | Allocations: 68744)
+Completed 200 OK in 152ms (Views: 145.9ms | ActiveRecord: 0.0ms | Allocations: 74531)
+
+
+Started GET "/contact_path" for ::1 at 2022-05-04 19:11:22 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/contact_path"):
+  
+Started GET "/" for ::1 at 2022-05-04 19:11:23 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.5ms | Allocations: 758)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 99)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 7293)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 7664)
+
+
+Started GET "/about_path" for ::1 at 2022-05-04 19:11:29 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/about_path"):
+  
+Started GET "/" for ::1 at 2022-05-04 19:11:30 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 652)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 99)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 7116)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 7442)
+
+
+Started GET "/root_path" for ::1 at 2022-05-04 19:11:34 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/root_path"):
+  
+Started GET "/" for ::1 at 2022-05-04 19:11:39 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 652)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 99)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 7111)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 7439)
+
+
+Started GET "/" for ::1 at 2022-05-04 19:12:27 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1007)
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | Allocations: 372)
+  Rendered layouts/_footer.html.erb (Duration: 8.7ms | Allocations: 4461)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 12563)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms | Allocations: 13674)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x0000000000c198>):
+     5:   </small>
+     6:   <nav>
+     7:     <ul>
+     8:       <li><%= link_to "About",   about_path %></li>
+     9:       <li><%= link_to "Contact", contact_path %></li>
+    10:       <li><a href="https://news.railstutorial.org/">News</a></li>
+    11:     </ul>
+  
+app/views/layouts/_footer.html.erb:8
+app/views/layouts/application.html.erb:16
+Started GET "/" for ::1 at 2022-05-04 19:12:41 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.1ms | Allocations: 652)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 132)
+  Rendered layouts/_footer.html.erb (Duration: 9.6ms | Allocations: 4219)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 11328)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms | Allocations: 11639)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x0000000000c490>):
+     5:   </small>
+     6:   <nav>
+     7:     <ul>
+     8:       <li><%= link_to "About",   about_path %></li>
+     9:       <li><%= link_to "Contact", contact_path %></li>
+    10:       <li><a href="https://news.railstutorial.org/">News</a></li>
+    11:     </ul>
+  
+app/views/layouts/_footer.html.erb:8
+app/views/layouts/application.html.erb:16
+Started GET "/" for ::1 at 2022-05-04 19:13:23 -0600
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 62.5ms | Allocations: 29368)
+  Rendered layouts/_header.html.erb (Duration: 1.6ms | Allocations: 395)
+  Rendered layouts/_footer.html.erb (Duration: 11.3ms | Allocations: 5220)
+  Rendered layout layouts/application.html.erb (Duration: 106.0ms | Allocations: 54933)
+Completed 500 Internal Server Error in 119ms (ActiveRecord: 0.0ms | Allocations: 60664)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x0000000000b720>):
+     5:   </small>
+     6:   <nav>
+     7:     <ul>
+     8:       <li><%= link_to "About",   about_path %></li>
+     9:       <li><%= link_to "Contact", contact_path %></li>
+    10:       <li><a href="https://news.railstutorial.org/">News</a></li>
+    11:     </ul>
+  
+app/views/layouts/_footer.html.erb:8
+app/views/layouts/application.html.erb:16
+Started GET "/" for ::1 at 2022-05-04 19:14:22 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.5ms | Allocations: 816)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 159)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 36.1ms | Allocations: 20164)
+Completed 200 OK in 38ms (Views: 37.2ms | Allocations: 21086)
+
+
+Started GET "/about" for ::1 at 2022-05-04 19:14:24 -0600
+Processing by StaticPagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 0.7ms | Allocations: 167)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 132)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 6703)
+Completed 200 OK in 12ms (Views: 11.1ms | Allocations: 7126)
+
+
+Started GET "/contact" for ::1 at 2022-05-04 19:14:26 -0600
+Processing by StaticPagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 0.6ms | Allocations: 137)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 132)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 6685)
+Completed 200 OK in 12ms (Views: 11.2ms | Allocations: 7069)
+
+
+Started GET "/" for ::1 at 2022-05-04 19:14:27 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 651)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 132)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 7061)
+Completed 200 OK in 12ms (Views: 11.9ms | Allocations: 7390)
+
+
+Started GET "/" for ::1 at 2022-05-04 19:14:28 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.8ms | Allocations: 648)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 132)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 7032)
+Completed 200 OK in 13ms (Views: 12.9ms | Allocations: 7357)
+
+
