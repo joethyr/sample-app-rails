@@ -543,3 +543,109 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 13ms (Views: 12.9ms | Allocations: 7357)
 
 
+Started GET "/" for ::1 at 2022-05-04 19:57:55 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1006)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 344)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 221)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 20913)
+Completed 200 OK in 23ms (Views: 21.9ms | Allocations: 22133)
+
+
+Started GET "/" for ::1 at 2022-05-04 20:13:32 -0600
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 75.9ms | Allocations: 29734)
+  Rendered layouts/_header.html.erb (Duration: 2.6ms | Allocations: 395)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 226)
+  Rendered layout layouts/application.html.erb (Duration: 112.9ms | Allocations: 50278)
+Completed 200 OK in 121ms (Views: 115.3ms | ActiveRecord: 0.0ms | Allocations: 56081)
+
+
+Started GET "/signup_path" for ::1 at 2022-05-04 20:13:34 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/signup_path"):
+  
+Started GET "/signup_path" for ::1 at 2022-05-04 20:15:16 -0600
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/signup_path"):
+  
+Started GET "/" for ::1 at 2022-05-04 20:15:20 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 87.7ms | Allocations: 29470)
+  Rendered layouts/_header.html.erb (Duration: 2.4ms | Allocations: 393)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 226)
+  Rendered layout layouts/application.html.erb (Duration: 134.3ms | Allocations: 49808)
+Completed 200 OK in 145ms (Views: 138.3ms | ActiveRecord: 0.0ms | Allocations: 53645)
+
+
+Started GET "/signup_path" for ::1 at 2022-05-04 20:15:21 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/signup_path"):
+  
+Started GET "/" for ::1 at 2022-05-04 20:15:23 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.4ms | Allocations: 651)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 132)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 66)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 7052)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.0ms | Allocations: 7399)
+
+
+Started GET "/" for ::1 at 2022-05-04 20:15:36 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 816)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 159)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 20088)
+Completed 200 OK in 22ms (Views: 21.7ms | Allocations: 20979)
+
+
+Started GET "/signup_path" for ::1 at 2022-05-04 20:15:38 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/signup_path"):
+  
+Started GET "/" for ::1 at 2022-05-04 20:15:39 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.7ms | Allocations: 653)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 132)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 66)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 7166)
+Completed 200 OK in 16ms (Views: 15.0ms | Allocations: 7506)
+
+
+Started GET "/" for ::1 at 2022-05-04 20:16:32 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1046)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 310)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 221)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 8288)
+Completed 200 OK in 16ms (Views: 15.1ms | Allocations: 9415)
+
+
+Started GET "/signup" for ::1 at 2022-05-04 20:16:33 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 170)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 167)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 7043)
+Completed 200 OK in 14ms (Views: 13.0ms | Allocations: 8056)
+
+
