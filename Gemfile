@@ -11,6 +11,7 @@ gem 'sassc', '~> 2.1.0'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sassc-rails', '>= 2.1.0'
 gem "sprockets-rails"
+gem 'bcrypt'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 # gem "sprockets-rails"
