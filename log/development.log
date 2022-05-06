@@ -1334,3 +1334,5 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 200 OK in 288ms (Views: 19.3ms | ActiveRecord: 0.5ms | Allocations: 14208)
 
 
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
