@@ -3759,3 +3759,193 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 0.4ms | Allocations: 10306)
 
 
+Started GET "/users/1" for ::1 at 2022-05-06 11:27:12 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 300)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:10:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.6ms | Allocations: 1256)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 33.5ms | Allocations: 28383)
+Completed 200 OK in 39ms (Views: 35.2ms | ActiveRecord: 0.6ms | Allocations: 30578)
+
+
+Started GET "/users/1" for ::1 at 2022-05-06 11:30:32 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 70)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:10:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.1ms | Allocations: 764)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered layout layouts/application.html.erb (Duration: 335.8ms | Allocations: 49620)
+Completed 200 OK in 339ms (Views: 336.3ms | ActiveRecord: 0.3ms | Allocations: 50450)
+
+
+Started GET "/users/1" for ::1 at 2022-05-06 11:30:53 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 70)
+  Rendered layout layouts/application.html.erb (Duration: 83.4ms | Allocations: 26516)
+Completed 500 Internal Server Error in 86ms (ActiveRecord: 0.1ms | Allocations: 27336)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "  }": expected selector or at-rule, was "}"
+        on line 123:4 of app/assets/stylesheets/custom.scss
+>>   }
+
+   ---^
+):
+     6:   <%= csrf_meta_tags %>
+     7:   <%= csp_meta_tag %>
+     8: 
+     9:   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:   <%= javascript_importmap_tags %>
+    11:     <%= javascript_importmap_tags %>
+    12: </head>
+  
+app/assets/stylesheets/custom.scss:123
+app/views/layouts/application.html.erb:9
+Started GET "/users/1" for ::1 at 2022-05-06 11:31:02 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 91)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:10:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.2ms | Allocations: 791)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered layout layouts/application.html.erb (Duration: 273.9ms | Allocations: 49900)
+Completed 200 OK in 276ms (Views: 274.3ms | ActiveRecord: 0.3ms | Allocations: 50802)
+
+
+Started GET "/users/1" for ::1 at 2022-05-06 11:31:07 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 668)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:10:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 7.9ms | Allocations: 2087)
+  Rendered layouts/_footer.html.erb (Duration: 1.2ms | Allocations: 227)
+  Rendered layout layouts/application.html.erb (Duration: 177.6ms | Allocations: 72990)
+Completed 200 OK in 201ms (Views: 180.5ms | ActiveRecord: 1.6ms | Allocations: 88619)
+
+
+Started GET "/users/1" for ::1 at 2022-05-06 11:31:19 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 70)
+  Rendered layout layouts/application.html.erb (Duration: 93.7ms | Allocations: 20405)
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 0.2ms | Allocations: 21280)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "  }": expected selector or at-rule, was "}"
+        on line 123:4 of app/assets/stylesheets/custom.scss
+>>   }
+
+   ---^
+):
+     6:   <%= csrf_meta_tags %>
+     7:   <%= csp_meta_tag %>
+     8: 
+     9:   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:   <%= javascript_importmap_tags %>
+    11:     <%= javascript_importmap_tags %>
+    12: </head>
+  
+app/assets/stylesheets/custom.scss:123
+app/views/layouts/application.html.erb:9
+Started GET "/users/1" for ::1 at 2022-05-06 11:31:29 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 91)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:10:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.7ms | Allocations: 792)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 66)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 9251)
+Completed 200 OK in 34ms (Views: 23.6ms | ActiveRecord: 0.4ms | Allocations: 10170)
+
+
+Started GET "/users/1" for ::1 at 2022-05-06 11:31:30 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 70)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:10:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 1.5ms | Allocations: 762)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 8696)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.2ms | Allocations: 9502)
+
+
+Started GET "/users/1" for ::1 at 2022-05-06 11:31:30 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 70)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:10:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 5.1ms | Allocations: 762)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 66)
+  Rendered layout layouts/application.html.erb (Duration: 29.3ms | Allocations: 8689)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.4ms | Allocations: 9495)
+
+
+Started GET "/users/1" for ::1 at 2022-05-06 11:31:34 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 70)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:10:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 4.0ms | Allocations: 764)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 8752)
+Completed 200 OK in 22ms (Views: 19.2ms | ActiveRecord: 0.3ms | Allocations: 9572)
+
+
