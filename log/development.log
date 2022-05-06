@@ -1014,3 +1014,58 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 267ms (Views: 264.5ms | ActiveRecord: 0.2ms | Allocations: 52703)
 
 
+Started GET "/users/1" for ::1 at 2022-05-05 19:21:09 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 308)
+  Rendered layouts/_header.html.erb (Duration: 1.3ms | Allocations: 352)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 219)
+  Rendered layout layouts/application.html.erb (Duration: 30.7ms | Allocations: 21051)
+Completed 200 OK in 51ms (Views: 33.5ms | ActiveRecord: 1.9ms | Allocations: 26950)
+
+
+Started GET "/users/1" for ::1 at 2022-05-05 19:21:36 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 71)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 132)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 66)
+  Rendered layout layouts/application.html.erb (Duration: 229.2ms | Allocations: 48462)
+Completed 200 OK in 232ms (Views: 230.1ms | ActiveRecord: 0.1ms | Allocations: 49337)
+
+
+Started GET "/users/1" for ::1 at 2022-05-05 19:21:37 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 71)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 132)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 7121)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.2ms | Allocations: 7925)
+
+
+Started GET "/signup" for ::1 at 2022-05-05 19:22:15 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 31.1ms | Allocations: 10957)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 126)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 66)
+  Rendered layout layouts/application.html.erb (Duration: 45.7ms | Allocations: 17840)
+Completed 200 OK in 48ms (Views: 46.6ms | ActiveRecord: 0.0ms | Allocations: 18290)
+
+
