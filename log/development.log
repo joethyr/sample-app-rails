@@ -1069,3 +1069,39 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 48ms (Views: 46.6ms | ActiveRecord: 0.0ms | Allocations: 18290)
 
 
+Started GET "/signup" for ::1 at 2022-05-05 19:32:28 -0600
+Processing by UsersController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:7:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1504)
+  Rendered layouts/_header.html.erb (Duration: 1.3ms | Allocations: 137)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 113.5ms | Allocations: 21313)
+Completed 200 OK in 125ms (Views: 116.1ms | ActiveRecord: 0.5ms | Allocations: 25289)
+
+
+Started POST "/users" for ::1 at 2022-05-05 19:33:00 -0600
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"jodsjof osdjfoisj eoisjdlkfj s", "email"=>"llkdjfl@gmd.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 861)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/users_controller.rb:11:in `create'
+Started GET "/signup" for ::1 at 2022-05-05 19:59:09 -0600
+Processing by UsersController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:7:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1492)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 137)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 21411)
+Completed 200 OK in 29ms (Views: 23.1ms | ActiveRecord: 0.3ms | Allocations: 25388)
+
+
